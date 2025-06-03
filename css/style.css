@@ -39,13 +39,15 @@ body {
 .main__bg {
     background: url(../img/bg2.png) no-repeat center center;
     background-size: cover;
+    height: 666px;
+    margin-top: -49px;
 }
 
 .main__paragraph {
     font-weight: 600;
     font-size: 24px;
     text-align: center;
-    padding: 50px 0px;
+    padding: 98px 0px;
 }
 
 /* Card */
@@ -62,12 +64,17 @@ body {
     background: #fefbf4be;
     height: 300px;
     margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 54px;
 }
 
 .card__pizza {
     position: absolute;
     top: -15%;
-    left: 32%;
+    left: 34%;
 }
 
 .card__favorite {
@@ -77,6 +84,37 @@ body {
 }
 
 .card-wrapper__info {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+}
+
+.card__title {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+.card__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.card__price {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.card__btn {
+    position: absolute;
+    border-radius: 25px;
+    border: none;
+    background: var(--cor01);
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    bottom: -18px;
+    left: 80px;
 }
