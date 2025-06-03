@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url(font.css);
+@import url(fonts.css);
 @import url(variable.css);
 
 * {
@@ -9,12 +9,18 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--font-base);
+}
+
 .container {
     width: 100%;
     max-width: 1237px;
     margin: 0 auto;
-    padding: 0px 80px;
+    padding: 0px 24px;
 }
+
+/* Top site */
 
 .header__hero {
     background: url(../img/bg_mobile.png) no-repeat center center;
@@ -23,7 +29,23 @@
 
 .header__title {
     width: 100%;
-    display: block;
     margin: 0 auto;
-    padding: 78px 0px;
+    padding: 78px 80px;
+
 }
+
+/* Main site */
+
+.main__bg {
+    background: url(../img/bg2.png) no-repeat center center;
+    background-size: cover;
+}
+
+.main__paragraph {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+/* menu */

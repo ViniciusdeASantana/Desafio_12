@@ -1,4 +1,9 @@
 @font-face {
-    font-family: inter;
+    font-family: Inter;
     src: url(../font/Inter-Var.ttf);
+}
+
+@font-face {
+    font-family: space-grotesk;
+    src: url(../font/SpaceGrotesk.ttf);
 }

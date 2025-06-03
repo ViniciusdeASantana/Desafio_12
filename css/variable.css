@@ -6,5 +6,6 @@
     --cor04: #ffffff;
 
     /* type */
-    --font-base: 'inter';
+    --font-base: 'Inter';
+    --font-secundary: 'space-grotesk';
 }
