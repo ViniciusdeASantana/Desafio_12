@@ -18,6 +18,7 @@ body {
     max-width: 1237px;
     margin: 0 auto;
     padding: 0px 24px;
+
 }
 
 /* Top site */
@@ -73,6 +74,15 @@ body {
     grid-template-columns: 1fr;
     gap: 39px;
     padding-bottom: 48px;
+
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-bottom: 64px;
+    }
+
+    @media(min-width: 1024px) {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
 }
 
 /* Card */
@@ -82,6 +92,7 @@ body {
     height: 360px;
 
     @media(min-width: 768px) {
+        padding: 0px 20px;
     }
 }
 
@@ -111,6 +122,10 @@ body {
     @media(min-width: 425px) {
         left: 34%;
     }
+
+    @media(min-width: 768px) {
+        left: 31%;
+    }
 }
 
 .card__favorite {
@@ -120,6 +135,10 @@ body {
 
     @media(min-width: 375px) {
         left: 75%;
+    }
+
+    @media(min-width: 768px) {
+        left: 80%;
     }
 }
 
@@ -166,6 +185,10 @@ body {
     @media(min-width: 425px) {
         left: 80px;
     }
+
+    @media(min-width: 768px) {
+        left: 44px;
+    }
 }
 
 /* about place */
@@ -177,6 +200,10 @@ body {
 .section__img {
     width: 100%;
     padding-top: 64px;
+
+    @media(min-width: 768px) {
+        height: 500px;
+    }
 }
 
 .section-wrapper__content {
