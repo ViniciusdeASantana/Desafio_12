@@ -74,13 +74,25 @@ body {
 .card__pizza {
     position: absolute;
     top: -15%;
-    left: 34%;
+    left: 28%;
+
+    @media(min-width: 375px) {
+        left: 32%;
+    }
+
+    @media(min-width: 425px) {
+        left: 34%;
+    }
 }
 
 .card__favorite {
     position: absolute;
     top: -5%;
-    left: 75%;
+    left: 78%;
+
+    @media(min-width: 375px) {
+        left: 75%;
+    }
 }
 
 .card-wrapper__info {
@@ -112,11 +124,20 @@ body {
     border-radius: 25px;
     border: none;
     background: var(--cor01);
-    padding: 12px 40px;
+    padding: 12px 34px;
     font-weight: 600;
     font-size: 14px;
     bottom: -18px;
-    left: 80px;
+    left: 36px;
+
+    @media(min-width: 375px) {
+        padding: 12px 40px;
+        left: 58px;
+    }
+
+    @media(min-width: 425px) {
+        left: 80px;
+    }
 }
 
 /* about place */
