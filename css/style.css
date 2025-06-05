@@ -113,40 +113,24 @@ body {
 .card__pizza {
     position: absolute;
     top: -15%;
-    left: 28%;
+    left: 50%;
+    transform: translate(-50%);
 
-    @media(min-width: 375px) {
-        left: 32%;
-    }
-
-    @media(min-width: 425px) {
-        left: 34%;
-    }
-
-    @media(min-width: 768px) {
-        left: 31%;
-    }
 }
 
 .card__favorite {
     position: absolute;
     top: -5%;
-    left: 78%;
+    right: 30px;
 
-    @media(min-width: 375px) {
-        left: 75%;
-    }
-
-    @media(min-width: 768px) {
-        left: 80%;
-    }
 }
 
 .card-wrapper__info {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
 }
 
 .card__title {
@@ -176,6 +160,7 @@ body {
     font-size: 14px;
     bottom: -18px;
     left: 36px;
+    margin-top: auto;
 
     @media(min-width: 375px) {
         padding: 12px 40px;
@@ -195,22 +180,39 @@ body {
 
 .section-wrapper {
     background: var(--cor04);
+    padding-top: 64px;
+
+    
+
 }
 
 .section__img {
     width: 100%;
-    padding-top: 64px;
+    object-fit: cover;
+    max-height: 400px;
 
     @media(min-width: 768px) {
-        height: 500px;
+        max-height: 500px;
+    }
+
+    @media(min-width: 1024px) {
+        max-width: 50%;
+        max-height: none;
     }
 }
 
 .section-wrapper__content {
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     align-items: start;
     gap: 32px;
+
+    @media(min-width: 1024px) {
+        max-width: 50%;
+        padding: 32px;
+    }
+    
 }
 
 .section__title {
