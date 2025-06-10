@@ -61,9 +61,6 @@ body {
         height: 1365px;
     }
 
-    @media(min-width: 2460px) {
-        height: 1900px;
-    }
 }
 
 .main__paragraph {
