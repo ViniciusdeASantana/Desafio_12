@@ -60,6 +60,10 @@ body {
     @media(min-width: 768px) {
         height: 1365px;
     }
+
+    @media(min-width: 2460px) {
+        height: 1900px;
+    }
 }
 
 .main__paragraph {
@@ -101,9 +105,6 @@ body {
     @media(min-width: 768px) {
         padding: 0px 20px;
     }
-
-    @media(min-width: 1024px) {
-    }
 }
 
 .card-wrapper__option {
@@ -136,11 +137,16 @@ body {
     position: absolute;
     top: -5%;
     right: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 
     @media(min-width: 768px) {
         right: 12px;
     }
+}
 
+.card__favorite.filled {
+    transform: scale(1.1);
 }
 
 .card-wrapper__info {
@@ -187,6 +193,11 @@ body {
     @media(min-width: 1024px) {
         padding: 12px 22px;
     }
+}
+
+.card__btn:hover {
+    cursor: pointer;
+    border: 2px solid rgba(250, 128, 114, 0.566);
 }
 
 /* about place */
@@ -267,10 +278,16 @@ body {
 
 .section__btn {
     border-radius: 25px;
-    border: none;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
     background: var(--cor01);
     padding: 12px 40px;
     margin-bottom: 64px;
     font-weight: 600;
     font-size: 14px;
+}
+
+.section__btn:hover {
+    cursor: pointer;
+    border: 2px solid rgba(250, 128, 114, 0.566);
 }
